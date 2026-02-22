@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+    <head>
+        <title>CSS DEmo</title>
+    </head>
+    <body>
+        <style>
+            body {
+                background-color: khaki;
+				text-align: center;
+            }
+
+            h1 {
+                color: red;
+            }
+
+            p {
+                font-style: italic;
+                color: blue;
+            }
+
+            h1, .aqua, #p3 {
+                font-family: "Courier New", Courier, monospace;
+            }
+
+            #heading1 {
+            }
+
+            #heading2 {
+                color: black;
+            }
+
+            .para-odd {
+                background-color: white;
+            }
+
+            .aqua {
+                background-color: aqua;
+                font-weight: bold;
+            }
+
+			div~p {
+				background-color: yellow;
+			}
+
+			a {
+			}
+
+			a:link {
+				color: red;
+			}
+
+			a:visited {
+				color: grey;
+			}
+
+			button:hover {
+				background-color: khaki;
+			}
+        </style>
+        <h1 id="heading1">CSS Demo</h1>
+        <p id="p1" class="para-odd">Para 1</p>
+        <h1 id="heading2">2nd header</h1>
+        <p id="p2" class="aqua">Para 2</p>
+		<a href="https://www.yahoo.com">Yahoo!</a>
+		<a href="https://www.bikroy.com">Birkoy!</a>
+		<button>Hover me</button>
+		<div>
+			<p> Para 1 in Div 1</p>
+			<p> Para 2 in Div 1</p>
+			<section>
+				<p>Para 1 in Inner div</p>
+			</section>
+		</div>
+		<p>Sibling paragraph</p>
+		<p>2nd Sibling paragraph</p>
+		<div>
+			<p> Para 1 in Div 2</p>
+			<p> Para 2 in Div 2</p>
+			<p> Para 3 in Div 2</p>
+		</div>
+    </body>
+</html>

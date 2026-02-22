@@ -1,0 +1,39 @@
+/* 
+1. Which element?: CSS Selector
+2. Which type of style? : CSS Property
+3. What is the value of the style?
+*/
+
+body {
+	background-color: khaki;
+}
+
+h1 {
+	color: red;
+}
+
+p {
+	font-style: italic;
+	color: blue;
+}
+
+h1, .aqua, #p3 {
+	font-family: 'Courier New', Courier, monospace;
+}
+
+#heading1 {
+
+}
+
+#heading2 {
+	color: black;
+}
+
+.para-odd {
+	background-color: white;
+}
+
+.aqua {
+	background-color: aqua;
+	font-weight: bold;
+}
