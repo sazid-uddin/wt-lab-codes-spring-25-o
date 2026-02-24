@@ -1,0 +1,26 @@
+<student-list>
+	<student>
+		<ID>24-51251-1</ID>
+		<Name>ABC</Name>
+		<department>CSE</department>
+		<semesters>
+			<semester no="1" name="Spring 25-26">
+				<course-list>
+					<course title="WT">
+						<grade>A+</grade>
+						<marks>92</marks>
+					</course>
+					<course title="DM">
+						<grade></grade>
+						<marks></marks>
+					</course>
+				</course-list>
+			</semester>
+			<semester no="2" name="Fall 25-26">
+				<course-list></course-list>
+			</semester>
+		</semesters>
+	</student>
+	<student>
+	</student>
+</student-list>

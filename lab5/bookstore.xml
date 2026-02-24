@@ -1,0 +1,9 @@
+<bookstore>
+	<book category="Fiction">
+		<title lang="en">Harry Potter</title>
+		<Author>JK Rowling</Author>
+		<year>1998</year>
+		<price>1500</price>
+	</book>
+	<Book></Book>
+</bookstore>
