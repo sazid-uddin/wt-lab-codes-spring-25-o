@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+    let data = [10, "5", 20];
+    let sum = 0;
+    for (let i = 0; i <= data.length; i++) {
+        if (i === data.length) {
+            console.log("End of Array");
+        } else if (typeof data[i] === 'string') {
+            console.log(data[i] + 1);
+        } else {
+     sum += data[i];
+        console.log(sum);
+        }    }
+    console.log("Final: " + sum);
+  </script>
+</body>
+</html>

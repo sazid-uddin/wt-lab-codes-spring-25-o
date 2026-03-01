@@ -1,0 +1,49 @@
+<html>
+<head>
+<style>
+#outer {
+  border: 2px solid black;
+  width: 300px;
+  height: 200px;
+  position: relative;
+  text-align: right;
+}
+#inner1 {
+  border: 1px solid black;
+  width: 120px;
+  height: 80px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+}
+#inner2 {
+  border: 1px solid black;
+  width: 120px;
+  height: 80px;
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  z-index: 5;
+}
+#inner3 {
+  border: 1px solid black;
+  width: 120px;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 15;
+  display: none;
+}
+</style>
+</head>
+<body>
+  <div id="outer">
+    Outer
+    <div id="inner1">Box One</div>
+    <div id="inner2">Box Two</div>
+    <div id="inner3">Box Three</div>
+  </div>
+</body>
+</html>
