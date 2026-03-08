@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+		<p id="p1"></p>
+		<button onclick="alert('button clicked')">Alert Button</button>
+		<button onclick="changeContent()">Change content</button>
+        <script>
+			function changeContent() {
+				console.log("");
+				// alert("Hello world");
+				var para = document.getElementById("p1");
+				console.log(para);
+				para.innerHTML = "New content";
+				document.write("<h1>Heading from document write</h1>");
+			}
+        </script>
+    </body>
+</html>
