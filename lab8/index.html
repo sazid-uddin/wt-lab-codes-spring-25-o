@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Document</title>
+</head>
+<body>
+	<p id="p1">Old content</p>
+	<button onclick="addContent()">Add content to paragraph</button>
+	<script>
+		// add text to p#p1
+
+		function addContent() {
+			// step 1: load the paragraph in JS
+			var para = document.getElementById("p1");
+			// console.log(para);
+			para.innerHTML = "Content Added";
+		}
+	</script>
+</body>
+</html>

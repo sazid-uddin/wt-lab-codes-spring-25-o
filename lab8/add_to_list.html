@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Document</title>
+</head>
+<body>
+	<p>List:</p>
+	<ol id="list">
+		<li>Item 1</li>
+		<li>Item 2</li>
+	</ol>
+	<br>
+	<button onclick="addLI()">Add List item</button>
+
+	<script>
+		// Goal: add another list item when button is pressed
+		function addLI() {
+			// Step 1: load list element in JS
+			var list = document.getElementById("list");
+			// console.log(list);
+			// Step 1.1: count existing children
+			var count = list.childElementCount;
+
+			// Step 2: create new list item
+			var newListItem = document.createElement("li");
+			// <li></li>
+			// newListItem.innerHTML = "Item 3";
+			newListItem.innerHTML = "Item " + (count+1).toString();
+			//<li>Item 3</li>
+
+			// Step 3: add new list item as the last child of list
+			list.appendChild(newListItem);
+		}
+	</script>
+</body>
+</html>
