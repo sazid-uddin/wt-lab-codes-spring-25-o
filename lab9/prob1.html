@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<form onsubmit="return validate()">
+		<input type="text" id="fn" placeholder="First Name">
+		<input type="text" id="ln" placeholder="Last Name">
+		<input type="submit">
+	</form>	
+	<p id="message" style="color: red;"></p>
+	<script>
+		function validate() {
+			// load user input
+			const first_name = document.getElementById("fn").value;
+			const last_name = document.getElementById("ln").value;
+
+			// 1st validation logic: •	Both fields must not be empty
+			if (first_name === "" || last_name === "") {
+				document.getElementById("message").innerHTML = "Both fields must not be empty";
+				return false; // prevent form submission and prevent page reload
+			}
+
+			// 2nd validation logic: •	Each field must have at least 2 characters.
+			if (first_name.length < 2 || last_name.length < 2) {
+				document.getElementById("message").innerHTML = "Each field must have at least 2 characters.";
+				return false; // prevent form submission and prevent page reload
+			}
+		}
+	</script>
+</body>
+</html>

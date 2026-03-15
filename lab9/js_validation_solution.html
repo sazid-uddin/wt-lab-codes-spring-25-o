@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<p>Unit Price: 1000</p>
+	Quantity: <input type="number" id="quantity" value="0">
+	<p id="total">Total Price: 0</p>
+	<p id="error" style="color: red;"></p>
+
+	<script>
+		var quantity_field = document.getElementById("quantity");
+		
+		function update() {
+			//Minimum threshold
+			if (quantity_field.value < 0) {
+				// reset it to 0
+				// quantity_field.value = 0;
+
+				// display an error
+				document.getElementById("error").innerHTML = "Quantity cannot be negative";
+			} else {
+				// calculate total price
+				document.getElementById("total").innerHTML = "Total Price: " + (quantity_field.value * 1000);
+				document.getElementById("error").innerHTML = "";
+			}
+
+			// Gift coupon notification
+			if (quantity_field.value * 1000 > 1000) {
+				alert("You are now eligible for a coupon");
+			}
+		}
+		quantity_field.addEventListener("change", update);
+	</script>
+</body>
+</html>
